@@ -11,9 +11,10 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="?actionBarSize"
+        android:minHeight="56dp"
         android:elevation="4dp"
         android:theme="@style/Theme.MeClass.AppBarOverlay">
+
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
@@ -22,9 +23,27 @@
             android:minHeight="?attr/actionBarSize"
             app:menu="@menu/toolbar_navigation"
             app:titleTextColor="@color/white"
-            android:theme="@style/Theme.MeClass.PopUpOverlay"/>
+            android:theme="@style/Theme.MeClass.PopUpOverlay"  />
 
     </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        card_view:cardCornerRadius="4dp">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Kelas 1"
+            android:textSize="50dp" />
+
+    </androidx.cardview.widget.CardView>
 
     <RelativeLayout
         android:layout_width="match_parent"
